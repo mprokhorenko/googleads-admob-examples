@@ -1,0 +1,8 @@
+{
+  "reportSpec": {
+    "dateRange": {"startDate": {"year": 2018, "month": 9, "day": 1}, "endDate": {"year": 2018, "month": 9, "day": 30}},
+    "dimensions": ["DATE", "APP"],
+    "metrics": ["CLICKS", "ESTIMATED_EARNINGS"],
+    "sortConditions": [{"dimension":"DATE", "order": "ASCENDING"}]
+  }
+}

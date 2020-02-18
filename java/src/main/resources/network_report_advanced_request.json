@@ -1,0 +1,9 @@
+{
+  "reportSpec": {
+    "dateRange": {"startDate": {"year": 2018, "month": 9, "day": 1}, "endDate": {"year": 2018, "month": 9, "day": 30}},
+    "dimensions": ["DATE", "APP", "PLATFORM", "AD_UNIT", "FORMAT"],
+    "metrics": ["CLICKS", "AD_REQUESTS", "IMPRESSIONS", "ESTIMATED_EARNINGS"],
+    "dimension_filters": [{"dimension": "FORMAT", "matches_any": {"values": ["banner"]}}],
+    "sortConditions": [{"dimension":"DATE", "order": "ASCENDING"}]
+  }
+}

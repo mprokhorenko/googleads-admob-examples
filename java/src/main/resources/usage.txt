@@ -1,0 +1,14 @@
+com.google.api.admob.sample.Main <command_name> [command_args]
+Commands:
+  networkReport [--publisher=<publisher_id> --template=<request_json> --startDate=<date> --endDate=<date> --format=<raw|csv>]
+    --publisher=<publisher_id> sets publisher for report. Use default one if not set.
+    --template=<request_json> sets request template. Uses /network_report_request.json as default value.
+    --startDate=<date> --endDate=<date> changes date range in the request template. Last 7 days range would be used if not set.
+    --format=<raw|csv> prints result in the set format.
+
+Example:
+  Main networkReport \
+    --publisher=pub-1234567890123456 \
+    --template=/network_report_advanced_request.json \
+    --startDate=20190730 --endDate=20190803 \
+    --format=csv
