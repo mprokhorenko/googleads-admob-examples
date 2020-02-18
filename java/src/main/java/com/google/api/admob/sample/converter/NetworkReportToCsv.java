@@ -13,11 +13,11 @@
  */
 package com.google.api.admob.sample.converter;
 
-import com.google.admob.v1.model.DimensionValue;
-import com.google.admob.v1.model.GenerateNetworkReportRequest;
-import com.google.admob.v1.model.GenerateNetworkReportResponse;
-import com.google.admob.v1.model.MetricValue;
-import com.google.admob.v1.model.ReportRow;
+import com.google.api.services.admob.v1.model.GenerateNetworkReportRequest;
+import com.google.api.services.admob.v1.model.GenerateNetworkReportResponse;
+import com.google.api.services.admob.v1.model.ReportRow;
+import com.google.api.services.admob.v1.model.ReportRowDimensionValue;
+import com.google.api.services.admob.v1.model.ReportRowMetricValue;
 import com.google.common.base.Joiner;
 import com.google.inject.Singleton;
 import java.math.BigDecimal;
@@ -85,7 +85,7 @@ public class NetworkReportToCsv {
     List<String> result = new ArrayList<>();
 
     for (String dimensionName : requestedDimensions) {
-      DimensionValue value = reportRow.getDimensionValues().get(dimensionName);
+      ReportRowDimensionValue value = reportRow.getDimensionValues().get(dimensionName);
 
       for (NetworkReportValueType type :
           NetworkReportDimension.valueOf(dimensionName).valueTypes()) {
@@ -106,7 +106,7 @@ public class NetworkReportToCsv {
     }
 
     for (String metricName : requestedMetrics) {
-      MetricValue value = reportRow.getMetricValues().get(metricName);
+      ReportRowMetricValue value = reportRow.getMetricValues().get(metricName);
       NetworkReportValueType type = NetworkReportMetric.valueOf(metricName).valueType();
       switch (type) {
         case METRIC_DOUBLE:

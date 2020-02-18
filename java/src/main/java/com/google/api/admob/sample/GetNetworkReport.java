@@ -16,11 +16,11 @@ package com.google.api.admob.sample;
 import static com.google.api.admob.sample.util.DateUtil.daysBeforeNow;
 import static com.google.api.admob.sample.util.DateUtil.yesterday;
 
-import com.google.admob.v1.model.Date;
-import com.google.admob.v1.model.DateRange;
-import com.google.admob.v1.model.GenerateNetworkReportRequest;
-import com.google.admob.v1.model.GenerateNetworkReportResponse;
-import com.google.admob.v1.model.PublisherAccount;
+import com.google.api.services.admob.v1.model.Date;
+import com.google.api.services.admob.v1.model.DateRange;
+import com.google.api.services.admob.v1.model.GenerateNetworkReportRequest;
+import com.google.api.services.admob.v1.model.GenerateNetworkReportResponse;
+import com.google.api.services.admob.v1.model.PublisherAccount;
 import com.google.api.admob.sample.converter.NetworkReportToCsv;
 import com.google.api.admob.sample.facade.AdMobApiFacade;
 import com.google.api.admob.sample.util.DateUtil;

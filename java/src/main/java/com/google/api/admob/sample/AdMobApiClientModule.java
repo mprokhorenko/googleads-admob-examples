@@ -13,7 +13,7 @@
  */
 package com.google.api.admob.sample;
 
-import com.google.admob.v1.AdMob;
+import com.google.api.services.admob.v1.AdMob;
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;

@@ -13,10 +13,10 @@
  */
 package com.google.api.admob.sample.facade;
 
-import com.google.admob.v1.AdMob;
-import com.google.admob.v1.model.GenerateNetworkReportRequest;
-import com.google.admob.v1.model.GenerateNetworkReportResponse;
-import com.google.admob.v1.model.PublisherAccount;
+import com.google.api.services.admob.v1.AdMob;
+import com.google.api.services.admob.v1.model.GenerateNetworkReportRequest;
+import com.google.api.services.admob.v1.model.GenerateNetworkReportResponse;
+import com.google.api.services.admob.v1.model.PublisherAccount;
 import com.google.api.admob.sample.util.JsonUtil;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;

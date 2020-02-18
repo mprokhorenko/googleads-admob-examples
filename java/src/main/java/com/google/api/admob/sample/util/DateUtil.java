@@ -13,7 +13,7 @@
  */
 package com.google.api.admob.sample.util;
 
-import com.google.admob.v1.model.Date;
+import com.google.api.services.admob.v1.model.Date;
 import java.time.Clock;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoField;
