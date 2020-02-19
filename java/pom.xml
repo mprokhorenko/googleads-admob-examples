@@ -21,7 +21,7 @@
 
   <properties>
     <project.guice.version>4.2.2</project.guice.version>
-    <project.api.client.version>1.25.0-SNAPSHOT</project.api.client.version>
+    <project.api.client.version>1.30.8</project.api.client.version>
     <project.api.services.admob.version>v1-rev20200210-1.30.8</project.api.services.admob.version>
     <project.http.version>1.32.0</project.http.version>
     <project.oauth.version>1.30.2</project.oauth.version>
