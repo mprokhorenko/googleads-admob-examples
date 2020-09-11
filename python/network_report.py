@@ -7,7 +7,7 @@ from python.report_processor import to_csv
 
 # Create AdMob API client
 client_id = '<todo: replace with a client_id from the secret json>'
-client_secret = 'todo: replace with a secret from the secret json'
+client_secret = '<todo: replace with a secret from the secret json>'
 api = AdMobAPI(client_id, client_secret)
 
 # Get my account
